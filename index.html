@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+</head>
+<body>
+  <button onclick="acender()">acender</button>
+  <img id="imagem" src="lampada_desligada.gif"> 
+  <button onclick="apagar()">apagar</button> 
+
+<script>
+    function acender(){
+        document.querySelector('#imagem').src = 'lampada_ligada.gif'
+    }
+
+    function apagar(){
+        document.querySelector('#imagem').src = 'lampada_desligada.gif'
+    }
+    
+    </script>
+
+</body>
+</html>
